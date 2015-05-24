@@ -1,0 +1,161 @@
+\documentclass[a4paper,english,titlepage]{scrartcl}
+\usepackage{geometry}																			% Layout of the document
+\geometry{a4paper,																				% Format
+					left=10mm,																			% Distance to left screen border
+					right=10mm,																			% Distance to right screen border
+					top=15mm,																				% Distance to top screen border
+					bottom=15mm,																		% Distance to bottom screen border
+					footskip=8mm																		% Setting for the page number
+					}
+\usepackage{lmodern}																			% Smoothing of fonts in the .pdf document
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}																	% Definition of the character set
+\usepackage[latin1]{inputenc}															% Package for detection of umlauts
+\usepackage[english]{babel}																% Language
+\usepackage[automark]{scrpage2}														% german: http://fff2.at/drupal/content/latex-paket-scrpage2     english: https://www.ctan.org/pkg/scrpage2?lang=en
+\pagestyle{scrheadings}
+\clearscrheadfoot
+%\ifoot[]{\author}																				% i = inner, c = center, o = outer; head/foot
+\ohead{\headmark}
+\cfoot{- \pagemark\ -}
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}									% Redefines the caption setup of the figures environment in the beamer class.
+\usepackage{graphicx}																			% Import image files: .pdf .jpg .png .tif
+\usepackage[export]{adjustbox}
+\usepackage{scrpage2}
+\usepackage{amsmath}																			% Mathematical formulas
+\usepackage{amsfonts}																			% i.a. Quantity symbols
+\usepackage{amssymb}																			% i.a. Symbol "Empty Set" \varnothing
+\usepackage{float}																				% Force Image Position [H]
+\usepackage{latexsym}																			% Package for LaTeX-Symbols
+\usepackage{pdflscape}																		% Presentation and format of the PDF document
+\usepackage{xcolor}																				% Colors
+\usepackage{colortbl}
+%\usepackage{cite}																				% Citation
+\frenchspacing																						% Turns off the extra space, that LaTeX normally inserts after a punctuation mark.
+\usepackage{tabularx}																			% Package for defining the width of columns in tables  \begin{tabularx}{\textwidth}{XX} \end{tabularx}
+\usepackage{longtable}																		% Package for larger tables across multiple pages
+\usepackage{booktabs}																			% Package for thick, vertical separators  \toprule, \midrule, \bottomrule
+\usepackage{soul}																					% Package for underlines  \ul  -->  e.g. \setul{1ex}{0.8ex}
+\usepackage{fancybox}																			% Packages for frames
+\usepackage[strict]{changepage}														% For adjustwidth environment
+\usepackage{framed}																				% For formal definitions
+\usepackage{listings}																			% Code boxes
+\usepackage{enumitem}
+\usepackage{url}																					% Display of Internet addresses
+\usepackage[hidelinks]{hyperref}													% Advanced referencing options. This package must be loaded last!  [pdfpagelayout=SinglePage]
+
+
+
+% Color - Table of Contents
+\definecolor{LinkColor}{rgb}{0,0,0.5}											% Numbers between 0 and 1
+\hypersetup{%
+colorlinks=true,%
+breaklinks=true,
+linkcolor=LinkColor,%
+%citecolor=LinkColor,%
+%filecolor=LinkColor,%
+%menucolor=LinkColor,%
+%pagecolor=LinkColor,%
+urlcolor=LinkColor,
+%hyperindex=true
+}
+
+
+% Specify Underlines  using  \setul{depth}{thickness}
+\setul{0.225ex}{0.125ex}
+
+
+% Create new commands to color all links in LinkColor and underline them
+\newcommand{\xhyperref}[2]{\hyperref[#1]{\color{LinkColor}\setulcolor{LinkColor}\ul{#2}}}
+\newcommand{\xnameref}[1]{\color{LinkColor}\underline{\nameref{#1}}\color{black}}
+\newcommand{\xhref}[2]{\href{#1}{\color{LinkColor}\setulcolor{LinkColor}\ul{#2}}}
+
+
+% Color Boxes in Images
+%Turquoise
+%#D0EFFF
+%RGB = 208 - 239 - 255
+%\color[rgb]{0.813,0.934,1.0}
+
+%Red
+%#FF0000
+%RGB = 255 - 0 - 0
+%\color[rgb]{1.0,0.0,0.0}
+
+%Blue
+%#325FA0
+%RGB = 50 - 95 - 160
+%\color[rgb]{0.195,0.371,0.625}
+
+
+% Design of Code Boxes
+% http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings#Style_definition
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+\lstdefinestyle{customasm}{
+  belowcaptionskip=1\baselineskip,
+  frame=L,
+  xleftmargin=\parindent,
+  language=[x86masm]Assembler,
+  basicstyle=\footnotesize\ttfamily,
+  commentstyle=\itshape\color{purple!40!black},
+}
+\lstset{escapechar=@,style=customc}
+
+
+% Inclusion of \paragraph and \subparagraph in den TOC
+\setcounter{tocdepth}{2}			% Inclusion in the table of contents
+\setcounter{secnumdepth}{4}		% Deepen numbering  ({5} for subparagraph)
+
+% Distance of itemize-listpoints
+\newcommand{\CustomItemGap}{-0.5em}
+
+
+
+
+% environment derived from framed.sty: see leftbar environment definition
+% http://www.jevon.org/wiki/Fancy_Quotation_Boxes_in_Latex
+% see  \usepackage[strict]{changepage}   and   \usepackage{framed}
+%
+\definecolor{bluebar}{rgb}{0.129,0.161,0.549}
+\definecolor{formalshade}{rgb}{0.95,0.95,1}
+
+\newenvironment{formal}{%
+  \def\FrameCommand{%
+    \hspace{1pt}%
+    {\color{bluebar}\vrule width 2pt}%
+    {\color{formalshade}\vrule width 4pt}%
+    \colorbox{formalshade}%
+  }%
+  \MakeFramed{\advance\hsize-\width\FrameRestore}%
+  \noindent\hspace{-4.55pt}% disable indenting first paragraph
+  \begin{adjustwidth}{}{7pt}%
+  \vspace{2pt}\vspace{2pt}%
+}
+{%
+  \vspace{2pt}\end{adjustwidth}\endMakeFramed%
+}
+
+
+% Change TOC title
+\addto\captionsenglish{
+  \renewcommand{\contentsname}
+    {Table of Contents}
+}
+
+
+% Specify the used file extension for all images within the document
+\newcommand{\CFE}{jpg}		% CFE = Color File Extension

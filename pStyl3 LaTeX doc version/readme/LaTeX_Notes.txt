@@ -1,0 +1,65 @@
+# General Notes regarding LaTeX
+
+
+- The % is used to comment lines out.
+- Two programs are needed in order to compile a LaTeX file (.tex) into a .pdf. First you need a base program, that holds all the functionality:
+  MiKTeX 2.9
+  http://miktex.org/2.9/setup
+
+  Then you need a LaTeX editor, through which you will edit, save and compile .tex files:
+  TeXnicCenter 2.02
+  http://www.texniccenter.org/
+
+  Of course there are many other alternatives to those listed programs, but those are the ones I personally use.
+
+- It should also be possible to view and edit .tex files with NotePad++, althrough it appears that Notepad++ doesn't want to display the 'tabs' entirely correct that I have set with TeXnicCenter.
+- Always compile a .tex file two times in a row. If you finish up a project and want to release a .tex project, compile the file three times (just to be sure) !!
+- The important files are the .tex files. All other files that can be seen in the archive are files that get automaticaly generated while compiling the xEdit_Training_Manual.tex file (minus the readme files, of course).
+- CTRL + F7   -->   Compiling the currently opened .tex file in TeXnicCenter
+
+
+
+
+
+
+
+# Different kinds of links within LaTeX
+
+The following three types of links are a normal standard:
+
+\href{http://www.nexusmods.com/skyrim/?}{This is a link to the Nexus}
+\hyperref[Chapter_5_2_Mod_Cleaning_Process]{Mod Cleaning Process}
+\nameref{Chapter_3_2_Master_Update_Mode}
+
+But instead of those, use my custom link commands, which are slightly adjusted versions of the above ones:
+
+\xhref{http://www.nexusmods.com/skyrim/?}{This is a link to the Nexus}
+\xhyperref{Chapter_5_2_Mod_Cleaning_Process}{Mod Cleaning Process}
+\xnameref{Chapter_3_2_Master_Update_Mode}
+
+
+- Note 1: \hyperref[]{}   -->   \xhyperref{}{}
+
+- Note 2: If a dead link should be displayed (or a link to a Nexus mod that has been since deleted) use \href{}{} instead of \xhref{}{}.
+          This will result in the link not being underlined, which is a little visual hint, that the link is 'dead'.
+
+
+
+
+
+
+
+
+# Different LaTeX commands
+
+
+\vspace{3mm}
+- creates a vertical space of 3mm
+
+
+\hspace{3mm}
+- creates a horizontal space of 3mm
+
+
+\newpage
+- creates a new page in the .pdf file

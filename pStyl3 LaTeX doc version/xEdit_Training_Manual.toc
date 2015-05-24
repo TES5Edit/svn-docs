@@ -1,0 +1,122 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}About This Document}{1}{subsection.1.1}
+\contentsline {section}{\numberline {2}Overview}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Introducing FNVEdit}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Acquisition and Installation}{3}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Downloading FNVEdit from Nexus}{3}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}DirectX and Requirements}{5}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}User Account Control}{5}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Starting FNVEdit}{5}{subsubsection.2.2.4}
+\contentsline {subsection}{\numberline {2.3}Tour of User Interface}{7}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Master/Plugin Selection View}{7}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Left-Side Panel}{8}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Main Context Menu}{9}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Right-Side Information Tab}{12}{subsubsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.5}Right-Side Messages Tab}{13}{subsubsection.2.3.5}
+\contentsline {subsubsection}{\numberline {2.3.6}Right-Side References Tab}{14}{subsubsection.2.3.6}
+\contentsline {subsubsection}{\numberline {2.3.7}Right-Side View Tab}{15}{subsubsection.2.3.7}
+\contentsline {subsubsection}{\numberline {2.3.8}Filter Menu}{16}{subsubsection.2.3.8}
+\contentsline {subsection}{\numberline {2.4}Saving and Confirmation}{17}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Quick Tips and Shortcuts}{18}{subsection.2.5}
+\contentsline {section}{\numberline {3}Master Update and Master Restore}{19}{section.3}
+\contentsline {subsection}{\numberline {3.1}Overview}{19}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Master Update Mode}{19}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Master Restore Mode}{22}{subsection.3.3}
+\contentsline {section}{\numberline {4}Conflict Detection and Resolution}{23}{section.4}
+\contentsline {subsection}{\numberline {4.1}Overview}{23}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Differences between Conflicts and Overrides}{24}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Applying Conflict Filters}{25}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Color Schemas and Display Order}{28}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}The Conflict Resolution Process}{30}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Understanding Patch Plugins and Merged Patches}{33}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Creating a Patch Plugin (Manual Method)}{33}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}Creating a Merged Patch (Automatic Method)}{38}{subsection.4.8}
+\contentsline {subsection}{\numberline {4.9}The Conflict Detection Algorithm}{43}{subsection.4.9}
+\contentsline {section}{\numberline {5}Mod Cleaning and Error Checking}{44}{section.5}
+\contentsline {subsection}{\numberline {5.1}Overview}{44}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Mod Cleaning Process}{44}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Removing "Identical to Master" Records}{50}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Sorting Master File Load Orders}{52}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Undeleting and Disabling References}{53}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}Purging un-used Master File References}{54}{subsubsection.5.2.4}
+\contentsline {subsection}{\numberline {5.3}Checking For Reference Errors}{56}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Checking for Circular Leveled Lists}{57}{subsection.5.4}
+\contentsline {section}{\numberline {6}Managing Mod Files}{58}{section.6}
+\contentsline {subsection}{\numberline {6.1}Overview}{58}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Adding Master Files to a Plugin}{58}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Changing Mod FormIDs}{61}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Merging a Plugin into another Plugin or Master}{63}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Converting a Plugin into a Master}{75}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Splitting a Plugin into a Plugin/Master Pair}{79}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Comparing Two Versions of a Mod}{87}{subsection.6.7}
+\contentsline {section}{\numberline {7}Transferring Mods from Fallout 3 to Fallout: New Vegas}{94}{section.7}
+\contentsline {subsection}{\numberline {7.1}Quick Finish for New Vegas Mod Transfer}{99}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Complete New Vegas Transfer Process}{100}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Deleting Offending References}{118}{subsection.7.3}
+\contentsline {section}{\numberline {8}Mod Utilities}{122}{section.8}
+\contentsline {subsection}{\numberline {8.1}Overview}{122}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Building Reference Information}{122}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Building Reachable Information}{125}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Changing and Adding References}{130}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}Marking Nodes as Modified}{136}{subsection.8.5}
+\contentsline {subsection}{\numberline {8.6}Copying and Replicating Idle Animations}{137}{subsection.8.6}
+\contentsline {subsection}{\numberline {8.7}Applying Scripts Into}{143}{subsection.8.7}
+\contentsline {subsection}{\numberline {8.8}Deprecated Functions}{143}{subsection.8.8}
+\contentsline {section}{\numberline {9}FNVEdit FAQ}{144}{section.9}
+\contentsline {subsection}{\numberline {9.1}Overview}{144}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Beginner Questions}{144}{subsection.9.2}
+\contentsline {subsubsection}{\numberline {9.2.1}What mods do I select when I first load FNVEdit?}{144}{subsubsection.9.2.1}
+\contentsline {subsubsection}{\numberline {9.2.2}Appling conflict filters shows almost every mod has conflicts!}{144}{subsubsection.9.2.2}
+\contentsline {subsubsection}{\numberline {9.2.3}Should I make changes to the mods if there is a conflict?}{145}{subsubsection.9.2.3}
+\contentsline {subsubsection}{\numberline {9.2.4}Where in the load-order should my patch plug-in be placed?}{145}{subsubsection.9.2.4}
+\contentsline {subsubsection}{\numberline {9.2.5}What does the patch plug-in really do for my Fallout: New Vegas load order?}{145}{subsubsection.9.2.5}
+\contentsline {subsubsection}{\numberline {9.2.6}Does FNVEdit MasterUpdate correct the white face bug?}{145}{subsubsection.9.2.6}
+\contentsline {subsubsection}{\numberline {9.2.7}What version of Fallout: New Vegas edit do I need FNVEdit for?}{145}{subsubsection.9.2.7}
+\contentsline {subsubsection}{\numberline {9.2.8}Does FNVEdit fix Enclave radio broken by the Broken Steel?}{146}{subsubsection.9.2.8}
+\contentsline {subsubsection}{\numberline {9.2.9}What happens if I can't get rid of my conflicts?}{146}{subsubsection.9.2.9}
+\contentsline {subsubsection}{\numberline {9.2.10}I get an error, "Record XXXX is not contained in a group"?}{146}{subsubsection.9.2.10}
+\contentsline {subsubsection}{\numberline {9.2.11}Does MasterRemove remove the ONAM records added by MasterUpdate?}{146}{subsubsection.9.2.11}
+\contentsline {subsubsection}{\numberline {9.2.12}Can I run MasterUpdate one-mod-at-a-time, to check them out?}{147}{subsubsection.9.2.12}
+\contentsline {subsubsection}{\numberline {9.2.13}What's with all these backup files building-up in my Data directory?}{147}{subsubsection.9.2.13}
+\contentsline {subsubsection}{\numberline {9.2.14}How many mods can F03Edit load?}{147}{subsubsection.9.2.14}
+\contentsline {subsubsection}{\numberline {9.2.15}Will MasterUpdate work if I have 200+ mods?}{147}{subsubsection.9.2.15}
+\contentsline {subsubsection}{\numberline {9.2.16}After Filtering for conflicts, I don't see anything on the Left-hand side!}{147}{subsubsection.9.2.16}
+\contentsline {subsubsection}{\numberline {9.2.17}Why does the change confirmation window force me to wait?}{148}{subsubsection.9.2.17}
+\contentsline {subsubsection}{\numberline {9.2.18}I deleted a plug-in file but FNVEdit seems to think it's still there?}{148}{subsubsection.9.2.18}
+\contentsline {subsubsection}{\numberline {9.2.19}How do I start the Master update mode?}{148}{subsubsection.9.2.19}
+\contentsline {subsubsection}{\numberline {9.2.20}Should I make a new merged patch if I change my load order in FOMM?}{148}{subsubsection.9.2.20}
+\contentsline {subsubsection}{\numberline {9.2.21}I am having problems getting FNVEdit to work on Vista.}{149}{subsubsection.9.2.21}
+\contentsline {subsubsection}{\numberline {9.2.22}After FNVEdit loads, I can't get the context menu on the left to load!}{149}{subsubsection.9.2.22}
+\contentsline {subsection}{\numberline {9.3}Intermediate Questions}{150}{subsection.9.3}
+\contentsline {subsubsection}{\numberline {9.3.1}Should I clean all of the mods that I use including FOOK, FWE, MMM, etc.?}{150}{subsubsection.9.3.1}
+\contentsline {subsubsection}{\numberline {9.3.2}Is there a function that pops up if you double click something?}{150}{subsubsection.9.3.2}
+\contentsline {subsubsection}{\numberline {9.3.3}What is the difference between 'copy as override' and 'deep copy as override'?}{150}{subsubsection.9.3.3}
+\contentsline {subsubsection}{\numberline {9.3.4}Replicating a dialogue block with all topic blocks that belong to it}{150}{subsubsection.9.3.4}
+\contentsline {subsubsection}{\numberline {9.3.5}Having troubles updating stuff from one mod version to another}{151}{subsubsection.9.3.5}
+\contentsline {subsubsection}{\numberline {9.3.6}How do I convert an ESP into an ESM?}{151}{subsubsection.9.3.6}
+\contentsline {subsubsection}{\numberline {9.3.7}Why should I "clean" my mod? It works just fine how it is!}{151}{subsubsection.9.3.7}
+\contentsline {subsubsection}{\numberline {9.3.8}Many of my NPCs in-game has stark white-faces!?}{151}{subsubsection.9.3.8}
+\contentsline {subsubsection}{\numberline {9.3.9}I have FOOK and get a load error like this, did I do something wrong?}{152}{subsubsection.9.3.9}
+\contentsline {subsubsection}{\numberline {9.3.10}I found records that I've changed don't exist in FalloutNV.ESM!}{152}{subsubsection.9.3.10}
+\contentsline {subsubsection}{\numberline {9.3.11}How do I reverse MasterUpdate so I can edit my ESP in the GECK?}{152}{subsubsection.9.3.11}
+\contentsline {subsubsection}{\numberline {9.3.12}How can I see individual records from a mod?}{152}{subsubsection.9.3.12}
+\contentsline {subsubsection}{\numberline {9.3.13}How do I view all of the references in a mod, not just conflicts?}{152}{subsubsection.9.3.13}
+\contentsline {subsubsection}{\numberline {9.3.14}I cleaned my mod and am getting CTDs with NAVM errors?}{153}{subsubsection.9.3.14}
+\contentsline {subsubsection}{\numberline {9.3.15}How do I reverse an un-intended change?}{153}{subsubsection.9.3.15}
+\contentsline {subsection}{\numberline {9.4}Advanced Questions}{154}{subsection.9.4}
+\contentsline {subsubsection}{\numberline {9.4.1}What is FalloutNV.hardcoded.esp?}{154}{subsubsection.9.4.1}
+\contentsline {subsubsection}{\numberline {9.4.2}Can I have a plug-in that references another plug-in as its Master?}{154}{subsubsection.9.4.2}
+\contentsline {subsubsection}{\numberline {9.4.3}Can I remove the delay between clicking an entry and the edit box?}{154}{subsubsection.9.4.3}
+\contentsline {subsubsection}{\numberline {9.4.4}Is there a "GoTo" option in the context menu for pulling-up a FormID?}{154}{subsubsection.9.4.4}
+\contentsline {subsubsection}{\numberline {9.4.5}Can you help me with the Optcodes for IsInCombat?}{155}{subsubsection.9.4.5}
+\contentsline {subsubsection}{\numberline {9.4.6}During the loading process, I notice some of the mods show Errors}{155}{subsubsection.9.4.6}
+\contentsline {subsubsection}{\numberline {9.4.7}Is there a way to look up the records opt-codes?}{155}{subsubsection.9.4.7}
+\contentsline {subsubsection}{\numberline {9.4.8}is "HasPerk" available in the CTDAs?}{155}{subsubsection.9.4.8}
+\contentsline {subsubsection}{\numberline {9.4.9}Can we edit text in the expanded windows?}{155}{subsubsection.9.4.9}
+\contentsline {subsubsection}{\numberline {9.4.10}Where can I learn more about FLST Lists?}{156}{subsubsection.9.4.10}
+\contentsline {subsubsection}{\numberline {9.4.11}Can we list the mod index for each Master/Plugin loaded in the dump?}{156}{subsubsection.9.4.11}
+\contentsline {subsubsection}{\numberline {9.4.12}I have a lot of house-mods that are conflicting, how do I fix this?}{156}{subsubsection.9.4.12}
+\contentsline {subsubsection}{\numberline {9.4.13}Will FNVEdit merge the Eyes, Hairs, Mouth pieces, etc.?}{156}{subsubsection.9.4.13}
+\contentsline {subsubsection}{\numberline {9.4.14}Can I merge destruction-data into my patch plug-in?}{156}{subsubsection.9.4.14}
+\contentsline {section}{\numberline {10}Cheat Sheets and Quick Reference Charts}{157}{section.10}

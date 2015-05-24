@@ -1,0 +1,28 @@
+General Information
+
+In order to recreate the training manual from scratch using LaTeX, all images from the original .doc have been saved and implemented with leading numbers, e.g. '001_This' and '002_That'.
+This was done to quickly have them 'processed'. Once new versions have been created and will then get implemented, this numbering proceeding should be dropped.
+Using no more leading numbers and only 'clear names' like e.g. 'This' and 'That' will make working with them (and placing them within the .tex file) a lot easier and natural.
+Of course this means, that every image must have an unique filename, which could be troublesome to a certain degree with the number of images the training manual contains, but after all this should still be the preferred method.
+
+
+
+
+
+All images should be (re)made under the following conditions:
+
+- Aero Glass is deactivated // distracts from the relevant content, it is also discontinued under Windows 8 and 10 (at least to my knowledge)
+- Screenshots (not the finished images) should be saved in .png format // no loss of quality
+- Finished images (e.g. with text) should be saved in the .jpg format // prevents the .pdf to explode in terms of filesize
+- Project files should always be saved and backuped aswell (in case e.g. "Inkscape" is used, those would be Inkscape's .svg files), so those can easily be adjusted later, too.
+- In case a screenshot is taken from Nexus, it should be taken while NOT being logged in .. the reader doesn't need to know who it was that has taken that specific screenshot in question.
+- The size in which an image should be displayed within the finished .pdf document should always be a compromise between readability and resolution.
+- The previous said, the image resolutions should never be lowered within image editing softwares. Scaling can be done via LaTeX.
+- Images can be framed using LaTeX aswell, if wanted. I already did that on a few.
+
+
+
+
+Questions:
+
+- Which image editing software has been used to create the original images of the training manual? In particular the creation of 'curved arrows' is of interest to me.
