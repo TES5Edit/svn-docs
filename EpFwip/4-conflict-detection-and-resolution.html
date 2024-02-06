@@ -9,10 +9,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<script type="text/javascript" src="js/lib/jquery.js"></script>
-	<script type="text/javascript" src="js/lib/jcarousellite.js"></script>
 	<script type="text/javascript" src="js/t5e.js"></script>
-
 </head>
 
 <body>
@@ -55,15 +52,15 @@
 		</div><!--/.local-->
 
 	</div><!--/.toc-->
-	
+
 	<section id="_Toc237480254">
 		<h1>4. Conflict Detection and Resolution</h1>
 
-		<button class="ctrl-all" onclick="toggle_all(this);">Collapse All</button>
+		<button class="ctrl-all">Collapse All</button>
 
 		<div class="content clearfix">
-			<div class="level-2" id="s_4-1">
-				<h2 class="ctrl">4.1 Overview</h2>
+			<details open class="level-2" id="s_4-1">
+				<summary><h2 class="ctrl">4.1 Overview</h2></summary>
 
 				<div class="content">
 					<p>One of the primary roles of <a href="http://www.fallout3nexus.com/downloads/file.php?id=637">FO3Edit</a> is for conflict detection and resolution, so that multiple mods that modify the same records can work together successfully. Conflicts and Overrides are not always bad, and in fact the entire idea of &#8220;modding&#8221; is to make changes to the game that replace (and thus create a conflict or override for) the original records that came with Fallout3. That is why our goal is to detect conflicts, determine their nature and resolve the bad conflicts while leaving good changes in place.</p>
@@ -81,10 +78,10 @@
 
 				</div><!--/.content-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_4-2">
-				<h2 class="ctrl">4.2 Differences between Conflicts and Overrides</h2>
+			<details open class="level-2" id="s_4-2">
+				<summary><h2 class="ctrl">4.2 Differences between Conflicts and Overrides</h2></summary>
 
 				<div class="content">
 					<p>There is a huge difference between a &quot;conflict&quot; and an &quot;override&quot;. There are mods which override changes from a master file, such as changing the level cap. If for example, ModA changes the level cap to 40 from the default, this over-rides the level 20 cap in the Fallout3 master files and is a normal. Overrides are not conflicting in any way. Overrides show up in <a href="http://www.fallout3nexus.com/downloads/file.php?id=637">FO3Edit</a> with a Yellow background color and Green text color. In most cases you don&#8217;t need to do anything with Overrides.</p>
@@ -105,10 +102,10 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_4-3">
-				<h2 class="ctrl">4.3 Applying Conflict Filters</h2>
+			<details open class="level-2" id="s_4-3">
+				<summary><h2 class="ctrl">4.3 Applying Conflict Filters</h2></summary>
 
 				<div class="content">
 					<p>The application of Filters is the primary means of conflict detection for <a href="http://www.fallout3nexus.com/downloads/file.php?id=637">FO3Edit</a>. When you apply a filter, the loaded mod data in FO3Edit is parsed and analyzed via a complex algorithm (described below) to detect all conflicts and overrides. The list of mods in the <a href="2-overview.html#s_2-3-2">Left-Side Panel</a> changes color (text and background) based on conflict status of each, and the results are shown in the <a href="2-overview.html#s_2-3-7">View Tab</a> which also changes color (text and background). The color-schema matches throughout FO3Edit, so you won&#8217;t have to memorize more than one (described in detail below).</p>
@@ -163,10 +160,10 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_4-4">
-				<h2 class="ctrl">4.4 Color Schemas and Display Order</h2>
+			<details open class="level-2" id="s_4-4">
+				<summary><h2 class="ctrl">4.4 Color Schemas and Display Order</h2></summary>
 
 				<div class="content">
 					<div class="p-img">
@@ -221,10 +218,10 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_4-5">
-				<h2 class="ctrl">4.5 The Conflict Resolution Process</h2>
+			<details open class="level-2" id="s_4-5">
+				<summary><h2 class="ctrl">4.5 The Conflict Resolution Process</h2></summary>
 
 				<div class="content">
 					<p>Conflict Resolution is really a simple process that you repeat multiple times for each conflict in your load-order. It is also the point at which your CPU (brain) gets involved in the process, as determining the action to take for each specific conflict requires your input. There are really only four options available to us for conflict resolution:</p>
@@ -286,10 +283,10 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_4-6">
-				<h2 class="ctrl">4.6 Understanding Patch Plug-ins and Merged Patches</h2>
+			<details open class="level-2" id="s_4-6">
+				<summary><h2 class="ctrl">4.6 Understanding Patch Plug-ins and Merged Patches</h2></summary>
 
 				<div class="content">
 					<p>There are two methods by which you can create a patch plug-in to resolve conflicts; by hand or using the automatic merged patch tool. The recommend best-practice with patch Plug-ins is that you use the automatic merged patch creation tool, after which you review the merged patch and add/remove/correct anything that the automatic tool did not change to your satisfaction. This is necessary because there is often not one &#8220;correct&#8221; answer to which mod should win a conflict over the same record, and sometimes what is normally deemed correct will not be to your personal liking. We describe the manual patch Plug-in creation process first, and then show you how <a href="http://www.fallout3nexus.com/downloads/file.php?id=637">FO3Edit</a> creates one automatically.</p>
@@ -301,10 +298,10 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_4-7">
-				<h2 class="ctrl">4.7 Creating a Patch Plug-in (Manual Method)</h2>
+			<details open class="level-2" id="s_4-7">
+				<summary><h2 class="ctrl">4.7 Creating a Patch Plug-in (Manual Method)</h2></summary>
 
 				<div class="content">
 					<div class="p-img">
@@ -392,10 +389,10 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_4-8">
-				<h2 class="ctrl">4.8 Creating a Merged Patch (Automatic Method)</h2>
+			<details open class="level-2" id="s_4-8">
+				<summary><h2 class="ctrl">4.8 Creating a Merged Patch (Automatic Method)</h2></summary>
 
 				<div class="content">
 					<p>FO3Edit provides an automatic method of generated a merged patch, which is the same as a patch Plug-in but contains resolved conflicts from All of the loaded mods. This will greatly speed the conflict resolution process, as most of the common types of conflicts are automatically merged into the patch Plug-in. It's very unlikely that the generated patch is going to be any worse then using the originally conflicting mods without the patch would be, and as such this method is recommended for everyone that runs mods.</p>
@@ -461,10 +458,10 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_4-9">
-				<h2 class="ctrl">4.9 The Conflict Detection Algorithm</h2>
+			<details open class="level-2" id="s_4-9">
+				<summary><h2 class="ctrl">4.9 The Conflict Detection Algorithm</h2></summary>
 
 				<div class="content">
 					<p>To round-out our discussion on conflict detection and resolution, we have included the main algorithm (in textural, descriptive form) for your reference. You do not have to read this unless you have an interest in the internal mechanism of how <a href="http://www.fallout3nexus.com/downloads/file.php?id=637">FO3Edit</a> determines a conflict/override from un-conflicted records.</p>
@@ -527,7 +524,7 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
 		</div><!--/.content-->
 

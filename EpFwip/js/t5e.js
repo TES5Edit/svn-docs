@@ -1,43 +1,30 @@
-// JavaScript Document
-$(document).ready(function() {
-	$('.carousel').jCarouselLite({
-		btnNext: '.carousel-next', btnPrev: '.carousel-prev', visible: 1, scroll: 1, mouseWheel: true
-	});
-});
+const EXPAND_ALL_TEXT = "Expand All";
+const COLLAPSE_ALL_TEXT = "Collapse All";
 
-$(document).ready(function() {
-    var ctrl = $('.ctrl');
+function toggleAll(evt) {
+	const button = evt.target;
 
-	ctrl.click(function() {
-		toggle_one(this);
-    });
-});
+	if (button.textContent === EXPAND_ALL_TEXT) {
+		button.textContent = COLLAPSE_ALL_TEXT;
+	} else {
+		button.textContent = EXPAND_ALL_TEXT;
+	}
 
-function toggle_one(item) {
-	var container = $(item).parent('div');
-	var content = $(container).children('div.content');
-	content.stop();
-
-	content.slideToggle(300);
-	$(item).toggleClass("inactive");
-	container.toggleClass("inactive");
-	container.children('.ctrl-all').toggle();
+	const sections = button.parentElement.querySelectorAll('details');
+	for (const section of sections) {
+		section.open = !section.open;
+	}
 }
 
-function toggle_all(button) {
-	var value = $(button).text();
-	//alert(value);
-	if (value === "Expand All") {
-		$(button).text("Collapse All");
-	} else {
-		$(button).text("Expand All");
+function setUpEventListeners() {
+	const buttons = document.getElementsByClassName('ctrl-all');
+	for (const button of buttons) {
+		button.addEventListener('click', toggleAll);
 	}
-	var sections = $(button).siblings('div');
-	$.each(sections, function(i, section) {
-		$(this).children('div.content');
-		$(this).children('div.content').stop(true, true).slideToggle(300);
-		$(this).toggleClass('inactive');
-		$(this).children('.ctrl').toggleClass('inactive');
-		$(this).children('.ctrl-all').toggle();
-	});
+}
+
+if (document.readyState === 'loading') {
+	document.addEventListener('DOMContentLoaded', setUpEventListeners);
+} else {
+	setUpEventListeners();
 }

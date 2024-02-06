@@ -9,10 +9,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<script type="text/javascript" src="js/lib/jquery.js"></script>
-	<script type="text/javascript" src="js/lib/jcarousellite.js"></script>
 	<script type="text/javascript" src="js/t5e.js"></script>
-
 </head>
 
 <body>
@@ -126,12 +123,12 @@
 	<section id="8-fo3edit-faq">
 		<h1>8. FO3Edit FAQ</h1>
 
-		<button class="ctrl-all" onclick="toggle_all(this);">Collapse All</button>
+		<button class="ctrl-all">Collapse All</button>
 
 		<div class="content clearfix">
 
-			<div class="level-2" id="s_8-1">
-				<h2 class="ctrl">8.1 Overview</h2>
+			<details open class="level-2" id="s_8-1">
+				<summary><h2 class="ctrl">8.1 Overview</h2></summary>
 
 				<div class="content">
 					<p>The idea behind the FAQ is to make it easier for you to find the <a href="http://www.fallout3nexus.com/downloads/file.php?id=637">FO3Edit</a> information that you need, without having to read this entire manual &#8211; that could put anyone into a coma. As I really don&#8217;t want the hassle of law suits, it is in both of our best interest that this tutorial is simple to navigate and quick to find resolution to the tasks at hand.</p>
@@ -144,16 +141,16 @@
 
 				</div><!--/.content-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_8-2">
-				<h2 class="ctrl">8.2 Beginner Questions</h2>
+			<details open class="level-2" id="s_8-2">
+				<summary><h2 class="ctrl">8.2 Beginner Questions</h2></summary>
 
 				<div class="content">
 					<p>The Beginner FAQ covers two key functions of FO3Edit; Conflict Detection / Resolution and Master Update Mode (<abbr title="Master Update Mode">MUM</abbr>). As these are the two most heavily used functions of FO3Edit, we focus beginners on these processes and questions. We start with <abbr title="Master Update Mode">MUM</abbr> and end with Conflict Detection / Resolution.</p>
 
-					<div class="level-3" id="s_8-2-1">
-						<h3 class="ctrl">8.2.1 &#8220;What mods do I select when I first load FO3Edit?&#8221;</h3>
+					<details open class="level-3" id="s_8-2-1">
+						<summary><h3 class="ctrl">8.2.1 &#8220;What mods do I select when I first load FO3Edit?&#8221;</h3></summary>
 
 						<div class="content">
 						<p><strong>Question:</strong> When loading FO3Edit, do I select all of the mods at once and apply a filter or does it need to be done individually?</p>
@@ -171,10 +168,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-2">
-						<h3 class="ctrl">8.2.2 &#8220;Appling conflict filters shows almost every mod has conflicts!&#8221;</h3>
+					<details open class="level-3" id="s_8-2-2">
+						<summary><h3 class="ctrl">8.2.2 &#8220;Appling conflict filters shows almost every mod has conflicts!&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> When I apply my conflict detection filter, almost all of the mods in my list have Red backgrounds! Am I totally conflicted here?</p>
@@ -188,10 +185,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-3">
-						<h3 class="ctrl">8.2.3 &#8220;Should I make changes to the mods if there is a conflict?&#8221;</h3>
+					<details open class="level-3" id="s_8-2-3">
+						<summary><h3 class="ctrl">8.2.3 &#8220;Should I make changes to the mods if there is a conflict?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> When <a href="4-conflict-detection-and-resolution.html">de-conflicting my mod</a>, is it okay to drag/drop changes into the mod with a conflict, or just edit the field in the mod to fix the conflict right in that mod file?</p>
@@ -205,10 +202,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-4">
-						<h3 class="ctrl">8.2.4 &#8220; Where in the load-order should my patch plug-in be placed?&#8221;</h3>
+					<details open class="level-3" id="s_8-2-4">
+						<summary><h3 class="ctrl">8.2.4 &#8220; Where in the load-order should my patch plug-in be placed?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Where in the load-order should my patch plug-in be placed?</p>
@@ -222,10 +219,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-5">
-						<h3 class="ctrl">8.2.5 &#8220; What does the patch plug-in really do for my Fallout3 load order?&#8221;</h3>
+					<details open class="level-3" id="s_8-2-5">
+						<summary><h3 class="ctrl">8.2.5 &#8220; What does the patch plug-in really do for my Fallout3 load order?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> What does the patch plug-in really do for my Fallout3 load order? Do I really need to go through this trouble to create one?</p>
@@ -241,10 +238,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-6">
-						<h3 class="ctrl">8.2.6 &#8220; Does FO3Edit MasterUpdate correct the white face bug?&#8221;</h3>
+					<details open class="level-3" id="s_8-2-6">
+						<summary><h3 class="ctrl">8.2.6 &#8220; Does FO3Edit MasterUpdate correct the white face bug?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Does FO3Edit MasterUpdate correct the white face bug? It is the only one I have been able to find since trying this - it is great otherwise.</p>
@@ -258,10 +255,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-7">
-						<h3 class="ctrl">8.2.7 &#8220; What version of Fallout3 edit do I need FO3Edit for?&#8221;</h3>
+					<details open class="level-3" id="s_8-2-7">
+						<summary><h3 class="ctrl">8.2.7 &#8220; What version of Fallout3 edit do I need FO3Edit for?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Do I need to run FO3Edit under Fallout3 v1.4 first and then apply the v1.5 patch?</p>
@@ -275,10 +272,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-8">
-						<h3 class="ctrl">8.2.8 &#8220; Does FO3Edit fix Enclave radio broken by the Broken Steel?&#8221;</h3>
+					<details open class="level-3" id="s_8-2-8">
+						<summary><h3 class="ctrl">8.2.8 &#8220; Does FO3Edit fix Enclave radio broken by the Broken Steel?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Can the MasterUpdate using FO3Edit cause Enclave radio to come back on air during broken steel?</p>
@@ -292,10 +289,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-9">
-						<h3 class="ctrl">8.2.9 &#8220; What happens if I can&#8217;t get rid of my conflicts?&#8221;</h3>
+					<details open class="level-3" id="s_8-2-9">
+						<summary><h3 class="ctrl">8.2.9 &#8220; What happens if I can&#8217;t get rid of my conflicts?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> What happens if I still have mod conflicts in-game even after creating a patch Plug-in and running MasterUpdate mode (i.e. &#8220;Modding-Up&#8221;)?</p>
@@ -325,10 +322,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-10">
-						<h3 class="ctrl">8.2.10 &#8220;I get an error, &#8216;Record XXXX is not contained in a group&#8217;? &#8221;</h3>
+					<details open class="level-3" id="s_8-2-10">
+						<summary><h3 class="ctrl">8.2.10 &#8220;I get an error, &#8216;Record XXXX is not contained in a group&#8217;? &#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> What should I do when I get an error during loading FO3Edit like this:</p>
@@ -348,10 +345,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-11">
-						<h3 class="ctrl">8.2.11 &#8220;Does MasterRemove remove the ONAM records added by MasterUpdate?&#8221;</h3>
+					<details open class="level-3" id="s_8-2-11">
+						<summary><h3 class="ctrl">8.2.11 &#8220;Does MasterRemove remove the ONAM records added by MasterUpdate?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> A question about MasterRestore mode: does it remove the ONAM records added by MasterUpdate?, or are the ONAM records harmless on Plug-in files?</p>
@@ -365,10 +362,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-12">
-						<h3 class="ctrl">8.2.12 &#8220;Can I run MasterUpdate one-mod-at-a-time, to check them out? &#8221;</h3>
+					<details open class="level-3" id="s_8-2-12">
+						<summary><h3 class="ctrl">8.2.12 &#8220;Can I run MasterUpdate one-mod-at-a-time, to check them out? &#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Is there any downside to checking one mod in <a href="http://www.fallout3nexus.com/downloads/file.php?id=640"><abbr title="Fallout Mod Manager">FOMM</abbr></a>, and then running <a href="3-master-update-and-master-restore.html">FO3MasterUpdate</a>. Then after it's finished, and there's no errors, checking the next mod in <a href="http://www.fallout3nexus.com/downloads/file.php?id=640"><abbr title="Fallout Mod Manager">FOMM</abbr></a> and running MasterUpdate again? Doing it mod by mod like that until eventually they're all checked?</p>
@@ -382,10 +379,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-13">
-						<h3 class="ctrl">8.2.13 &#8220;What&#8217;s with all these backup files building-up in my Data directory? &#8221;</h3>
+					<details open class="level-3" id="s_8-2-13">
+						<summary><h3 class="ctrl">8.2.13 &#8220;What&#8217;s with all these backup files building-up in my Data directory? &#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> I've been getting a lot of 0/1kb insertmodnamehere.esp save/backup files in my data folder. What exactly are these?</p>
@@ -399,10 +396,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-14">
-						<h3 class="ctrl">8.2.14 &#8220; How many mods can F03Edit load?&#8221;</h3>
+					<details open class="level-3" id="s_8-2-14">
+						<summary><h3 class="ctrl">8.2.14 &#8220; How many mods can F03Edit load?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> How many mods can F03Edit load? I can't seem to get but just half of my mods loaded at one time. I have over 170 mod to edit am I missing something or doing something wrong?</p>
@@ -418,10 +415,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-15">
-						<h3 class="ctrl">8.2.15 &#8220; Will MasterUpdate work if I have 200+ mods?&#8221;</h3>
+					<details open class="level-3" id="s_8-2-15">
+						<summary><h3 class="ctrl">8.2.15 &#8220; Will MasterUpdate work if I have 200+ mods?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> With the MasterUpdate function, can I use this if I have lots of mods (esp and esm files) installed and have never done the MasterUpdate before? Or does it have to be started with a fresh game install and then performed one mod at a time? Hopefully my question makes sense.</p>
@@ -435,10 +432,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-16">
-						<h3 class="ctrl">8.2.16 &#8220; After Filtering for conflicts, I don&#8217;t see anything on the Left-hand side!&#8221;</h3>
+					<details open class="level-3" id="s_8-2-16">
+						<summary><h3 class="ctrl">8.2.16 &#8220; After Filtering for conflicts, I don&#8217;t see anything on the Left-hand side!&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> After I run FO3Edit, and after filtering for conflict detection, if there's nothing on the left side, does that mean my load order is fine?</p>
@@ -452,10 +449,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-17">
-						<h3 class="ctrl">8.2.17 &#8220; Why does the Change Confirmation window force me to wait?!&#8221;</h3>
+					<details open class="level-3" id="s_8-2-17">
+						<summary><h3 class="ctrl">8.2.17 &#8220; Why does the Change Confirmation window force me to wait?!&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> When I first make changes to a mod, I get a huge timed warning that forces me to wait before allowing me to click Yes. Is there any way to turn the three-second modify warning off?</p>
@@ -469,10 +466,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-18">
-						<h3 class="ctrl">8.2.18 &#8220; I deleted a plug-in file but FO3Edit seems to think it&#8217;s still there?&#8221;</h3>
+					<details open class="level-3" id="s_8-2-18">
+						<summary><h3 class="ctrl">8.2.18 &#8220; I deleted a plug-in file but FO3Edit seems to think it&#8217;s still there?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> I deleted a plug-in file but FO3Edit seems to think it&#8217;s still there? When FO3Edit load itself, I see the messages about &quot;Error: Active Plug-in List contains nonexistent file &quot;merged.esp&quot;&quot;. I'm absolutely sure- I remove this ESP from load order and from disk with help of <a href="http://www.fallout3nexus.com/downloads/file.php?id=640"><abbr title="Fallout Mod Manager">FOMM</abbr></a>. What&#8217;s the deal?</p>
@@ -488,10 +485,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-19">
-						<h3 class="ctrl">8.2.19 &#8220; How do I start the master update mode?&#8221;</h3>
+					<details open class="level-3" id="s_8-2-19">
+						<summary><h3 class="ctrl">8.2.19 &#8220; How do I start the master update mode?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> How do I start the master update mode? Do I just load FO3MasterUpdate.exe and it does it automatically? I didn't see any special options after right clicking any mods.</p>
@@ -509,10 +506,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-20">
-						<h3 class="ctrl">8.2.20 &#8220; Should I make a new merged patch if I change my load order in <a href="http://www.fallout3nexus.com/downloads/file.php?id=640"><abbr title="Fallout Mod Manager">FOMM</abbr> ?&#8221;</a></h3>
+					<details open class="level-3" id="s_8-2-20">
+						<summary><h3 class="ctrl">8.2.20 &#8220; Should I make a new merged patch if I change my load order in <a href="http://www.fallout3nexus.com/downloads/file.php?id=640"><abbr title="Fallout Mod Manager">FOMM</abbr> ?&#8221;</a></h3></summary>
 
 						<div class="content">
 							<p><a href="http://www.fallout3nexus.com/downloads/file.php?id=640"><strong>Question:</strong> So if I make a new load order in</a> <a href="http://www.fallout3nexus.com/downloads/file.php?id=640"><abbr title="Fallout Mod Manager">FOMM</abbr></a>, should I make a new merged patch as well right?</p>
@@ -528,10 +525,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-21">
-						<h3 class="ctrl">8.2.21 &#8220; I am having problems getting FO3Edit to work on Vista &#8221;</h3>
+					<details open class="level-3" id="s_8-2-21">
+						<summary><h3 class="ctrl">8.2.21 &#8220; I am having problems getting FO3Edit to work on Vista &#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> I am having problems getting FO3Edit to work on Vista in the Program Files folder. Am I doing something wrong?</p>
@@ -551,10 +548,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-2-22">
-						<h3 class="ctrl">8.2.22 &#8220; After FO3Edit loads, I can&#8217;t get the context menu on the left to load!&#8221;</h3>
+					<details open class="level-3" id="s_8-2-22">
+						<summary><h3 class="ctrl">8.2.22 &#8220; After FO3Edit loads, I can&#8217;t get the context menu on the left to load!&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> After FO3Edit loads, I can&#8217;t get the context menu on the left-hand side to load up! I can right-click in the right-window, but the left window gives me nothing. What&#8217;s up with that?&#8221;</p>
@@ -568,7 +565,7 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
 				</div><!--/.content-->
 
@@ -577,14 +574,14 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_8-3">
-				<h2 class="ctrl">8.3 Intermediate Questions</h2>
+			<details open class="level-2" id="s_8-3">
+				<summary><h2 class="ctrl">8.3 Intermediate Questions</h2></summary>
 
 				<div class="content">
-					<div class="level-3" id="s_8-3-1">
-						<h3 class="ctrl">8.3.1 &#8220; Should I clean all of the mods that I use including FOOK, FWE, MMM, etc?&#8221;</h3>
+					<details open class="level-3" id="s_8-3-1">
+						<summary><h3 class="ctrl">8.3.1 &#8220; Should I clean all of the mods that I use including FOOK, FWE, MMM, etc?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Should I clean all of the mods that I use including FOOK, FWE, MMM, etc?</p>
@@ -598,10 +595,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-3-2">
-						<h3 class="ctrl">8.3.2 &#8220; Is there a function that pops up if you double click something?&#8221;</h3>
+					<details open class="level-3" id="s_8-3-2">
+						<summary><h3 class="ctrl">8.3.2 &#8220; Is there a function that pops up if you double click something?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Is there a function to the window that pops up if you double click something? There doesn't seem to be a way to edit anything in that window.</p>
@@ -615,10 +612,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-3-3">
-						<h3 class="ctrl">8.3.3 &#8220;D ifference between 'copy as override' and 'deep copy as override'?&#8221;</h3>
+					<details open class="level-3" id="s_8-3-3">
+						<summary><h3 class="ctrl">8.3.3 &#8220;D ifference between 'copy as override' and 'deep copy as override'?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> What is the difference between 'copy as override' and 'deep copy as override'?</p>
@@ -632,10 +629,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-3-4">
-						<h3 class="ctrl">8.3.4 &#8220; Replicating a dialogue block with all topic blocks that belong to it&#8221;</h3>
+					<details open class="level-3" id="s_8-3-4">
+						<summary><h3 class="ctrl">8.3.4 &#8220; Replicating a dialogue block with all topic blocks that belong to it&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> What if I want to replicate a dialogue block with all topic blocks that belong to it?</p>
@@ -671,10 +668,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-3-5">
-						<h3 class="ctrl">8.3.5 &#8220;Having troubles updating stuff from one mod version to another &#8221;</h3>
+					<details open class="level-3" id="s_8-3-5">
+						<summary><h3 class="ctrl">8.3.5 &#8220;Having troubles updating stuff from one mod version to another &#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> I am running into issues trying to update stuff from one version of a mod to another.</p>
@@ -705,10 +702,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-3-6">
-						<h3 class="ctrl">8.3.6 &#8220;How do I convert an ESP into an <abbr title="Elder-Scrolls Master File">ESM</abbr>? &#8221;</h3>
+					<details open class="level-3" id="s_8-3-6">
+						<summary><h3 class="ctrl">8.3.6 &#8220;How do I convert an ESP into an <abbr title="Elder-Scrolls Master File">ESM</abbr>? &#8221;</h3></summary>
 
 							<div class="content">
 									<p><strong>Question:</strong> I'm trying to turn an esp into an esm using FO3Edit, but I can't seem to find a way to save the file as an esm or &quot;convert&quot; it as it were. I know that there is a way to do it, I believe there's supposed to be a copy into... function, yet I can't seem to find it.</p>
@@ -722,10 +719,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-3-7">
-						<h3 class="ctrl">8.3.7 &#8220; Why should I &#8220;clean&#8221; my mod? It works just fine how it is!&#8221;</h3>
+					<details open class="level-3" id="s_8-3-7">
+						<summary><h3 class="ctrl">8.3.7 &#8220; Why should I &#8220;clean&#8221; my mod? It works just fine how it is!&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Why should I &#8220;clean&#8221; my mod? It works just fine how it is!</p>
@@ -741,10 +738,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-3-8">
-						<h3 class="ctrl">8.3.8 &#8220; Many of my NPCs in-game has stark white-faces!?&#8221;</h3>
+					<details open class="level-3" id="s_8-3-8">
+						<summary><h3 class="ctrl">8.3.8 &#8220; Many of my NPCs in-game has stark white-faces!?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Many of my NPCs in-game has stark white-faces! Did FO3Edit do this?</p>
@@ -762,10 +759,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-3-9">
-						<h3 class="ctrl">8.3.9 &#8220; I have FOOK and get a load error like this, did I do something wrong?&#8221;</h3>
+					<details open class="level-3" id="s_8-3-9">
+						<summary><h3 class="ctrl">8.3.9 &#8220; I have FOOK and get a load error like this, did I do something wrong?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> I have FOOK and get a load error like this, did I do something wrong?</p>
@@ -783,10 +780,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-3-10">
-						<h3 class="ctrl">8.3.10 &#8220;I found records that I&#8217;ve changed don&#8217;t exist in Fallout3.esm! &#8221;</h3>
+					<details open class="level-3" id="s_8-3-10">
+						<summary><h3 class="ctrl">8.3.10 &#8220;I found records that I&#8217;ve changed don&#8217;t exist in Fallout3.esm! &#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> When opening an esp in FO3Edit, it shows that of all the iXPReward**** records I&#8217;ve changed, that these ones do not exist in fallout3.esm. The other Game Settings I&#8217;ve edited show the yellow/green colors of &quot;override without conflict&quot;, but these 5 are simply black on white, as if these are brand new settings. Is this a bug in FO3Edit?</p>
@@ -800,10 +797,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-3-11">
-						<h3 class="ctrl">8.3.11 &#8220;How do I reverse MasterUpdate so I can edit my ESP in the GECK? &#8221;</h3>
+					<details open class="level-3" id="s_8-3-11">
+						<summary><h3 class="ctrl">8.3.11 &#8220;How do I reverse MasterUpdate so I can edit my ESP in the GECK? &#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> I checked the OP for instructions on how to reverse FO3MasterUpdate... how is it done?</p>
@@ -817,10 +814,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-3-12">
-						<h3 class="ctrl">8.3.12 &#8220; How can I see individual records from a mod?&#8221;</h3>
+					<details open class="level-3" id="s_8-3-12">
+						<summary><h3 class="ctrl">8.3.12 &#8220; How can I see individual records from a mod?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> How can I see individual records from a mod?</p>
@@ -834,10 +831,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-3-13">
-						<h3 class="ctrl">8.3.13 &#8220;How do I view all of the references in a mod, not just conflicts? &#8221;</h3>
+					<details open class="level-3" id="s_8-3-13">
+						<summary><h3 class="ctrl">8.3.13 &#8220;How do I view all of the references in a mod, not just conflicts? &#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> When I load the ESP I've been working with, which depends on 2 ESMs (Fallout3 of course, and BHRM--Bobblehead Remove and Move), neither the ESP, nor the additional <abbr title="Elder-Scrolls Master File">ESM</abbr>, will show me everything until I tell it to filter some of the extraneous information out. How do I view all of the references?</p>
@@ -851,10 +848,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-3-14">
-						<h3 class="ctrl">8.3.14 &#8220;I cleaned my mod and am getting CTDs with NAVM errors? &#8221;</h3>
+					<details open class="level-3" id="s_8-3-14">
+						<summary><h3 class="ctrl">8.3.14 &#8220;I cleaned my mod and am getting CTDs with NAVM errors? &#8221;</h3></summary>
 
 							<div class="content">
 								<p><strong>Question:</strong> I just cleaned my mod and am having CTD&#8217;s and all sorts of errors with NAVM records? Did the cleaning process break my mod?</p>
@@ -868,10 +865,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-3-15">
-						<h3 class="ctrl">8.3.15 &#8220;How do I reverse an un-intended change ?&#8221;</h3>
+					<details open class="level-3" id="s_8-3-15">
+						<summary><h3 class="ctrl">8.3.15 &#8220;How do I reverse an un-intended change ?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> I made some un-intended changes to the main game files and don&#8217;t know how to un-do those changes so that the original versions return. How is this done?</p>
@@ -885,7 +882,7 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
 				</div><!--/.content-->
 
@@ -894,14 +891,14 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_8-4">
-				<h2 class="ctrl">8.4 Advanced Questions</h2>
+			<details open class="level-2" id="s_8-4">
+				<summary><h2 class="ctrl">8.4 Advanced Questions</h2></summary>
 
 				<div class="content">
-					<div class="level-3" id="s_8-4-1">
-						<h3 class="ctrl">8.4.1 &#8220; What is Fallout3.Hardcoded.esp?&#8221;</h3>
+					<details open class="level-3" id="s_8-4-1">
+						<summary><h3 class="ctrl">8.4.1 &#8220; What is Fallout3.Hardcoded.esp?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> What is Fallout3.Hardcoded.esp?</p>
@@ -919,10 +916,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-4-2">
-						<h3 class="ctrl">8.4.2 &#8220;Can I have a plug-in that references another plug-in as its master?&#8221;</h3>
+					<details open class="level-3" id="s_8-4-2">
+						<summary><h3 class="ctrl">8.4.2 &#8220;Can I have a plug-in that references another plug-in as its master?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Can I have a plug-in that references another plug-in as its master? FO3Edit seems to do this, but I don&#8217;t see how to do it in the GECK.</p>
@@ -936,10 +933,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-4-3">
-						<h3 class="ctrl">8.4.3 &#8220;Can I remove the delay between clicking an entry and the edit box ?&#8221;</h3>
+					<details open class="level-3" id="s_8-4-3">
+						<summary><h3 class="ctrl">8.4.3 &#8220;Can I remove the delay between clicking an entry and the edit box ?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> When trying to Edit a cell, there is a delay between clicking an entry the second time and having the edit-box appear. Can this delay be removed?</p>
@@ -953,10 +950,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-4-4">
-						<h3 class="ctrl">8.4.4 &#8220;Is there a &#8220;Goto&#8221; option in the context menu for pulling-up a FormID? &#8221;</h3>
+					<details open class="level-3" id="s_8-4-4">
+						<summary><h3 class="ctrl">8.4.4 &#8220;Is there a &#8220;Goto&#8221; option in the context menu for pulling-up a FormID? &#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> For sub-records which are form IDs, it would be great to have a 'go to' option in the context menu which would then just select that form ID in the tree view.</p>
@@ -972,10 +969,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-4-5">
-						<h3 class="ctrl">8.4.5 &#8220;Can you help me with the Optcodes for IsInCombat? &#8221;</h3>
+					<details open class="level-3" id="s_8-4-5">
+						<summary><h3 class="ctrl">8.4.5 &#8220;Can you help me with the Optcodes for IsInCombat? &#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> I've just got a query about how we're supposed to input conditions. I'm trying to make a perk that works when you activate something out of combat, but I can't seem to input the &quot;IsInCombat&quot; function. I've tried using the opcode from this list, and I've tried converting the opcode to decimal, but it doesn't display the name.</p>
@@ -995,10 +992,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-4-6">
-						<h3 class="ctrl">8.4.6 &#8220; During the loading process, I notice some of the mods show Errors&#8221;</h3>
+					<details open class="level-3" id="s_8-4-6">
+						<summary><h3 class="ctrl">8.4.6 &#8220; During the loading process, I notice some of the mods show Errors&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> During the background loading process, I notice some of the mods show Errors, but FO3Edit seems to load them anyway.</p>
@@ -1012,10 +1009,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-4-7">
-						<h3 class="ctrl">8.4.7 &#8220; Is there a way to look up the records opt-codes?&#8221;</h3>
+					<details open class="level-3" id="s_8-4-7">
+						<summary><h3 class="ctrl">8.4.7 &#8220; Is there a way to look up the records opt-codes?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Is there a way to look up the records opt-codes?</p>
@@ -1029,10 +1026,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-4-8">
-						<h3 class="ctrl">8.4.8 &#8220; is &quot;HasPerk&quot; available in the CTDAs?&#8221;</h3>
+					<details open class="level-3" id="s_8-4-8">
+						<summary><h3 class="ctrl">8.4.8 &#8220; is &quot;HasPerk&quot; available in the CTDAs?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Shortcut question: is &quot;HasPerk&quot; (which IS a script command) available as far as you know, in the CTDAs?</p>
@@ -1046,10 +1043,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-4-9">
-						<h3 class="ctrl">8.4.9 &#8220; Can we edit text in the expanded windows?&#8221;</h3>
+					<details open class="level-3" id="s_8-4-9">
+						<summary><h3 class="ctrl">8.4.9 &#8220; Can we edit text in the expanded windows?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Can we edit text in the expanded windows? I'm trying to write a script and it's a bit inconvenient to write it in notepad and copy-paste across.</p>
@@ -1063,10 +1060,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-4-10">
-						<h3 class="ctrl">8.4.10 &#8220; Where can I learn more about FLST Lists?&#8221;</h3>
+					<details open class="level-3" id="s_8-4-10">
+						<summary><h3 class="ctrl">8.4.10 &#8220; Where can I learn more about FLST Lists?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Where can I learn more about FLST Lists?</p>
@@ -1080,10 +1077,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-4-11">
-						<h3 class="ctrl">8.4.11 &#8220; Can we list the mod index for each master/Plug-in loaded in the dump?&#8221;</h3>
+					<details open class="level-3" id="s_8-4-11">
+						<summary><h3 class="ctrl">8.4.11 &#8220; Can we list the mod index for each master/Plug-in loaded in the dump?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Would it be possible to list the mod index for each master/Plug-in loaded (included the module specified) in the dump? Then you could determine a record's module directly from its FormID.</p>
@@ -1097,10 +1094,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-4-12">
-						<h3 class="ctrl">8.4.12 &#8220;I have a lot of house-mods that are conflicting, how do I fix this? &#8221;</h3>
+					<details open class="level-3" id="s_8-4-12">
+						<summary><h3 class="ctrl">8.4.12 &#8220;I have a lot of house-mods that are conflicting, how do I fix this? &#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> My load list is smaller than most here, but I have a large selection of houses that were causing problems, as well as a few others like the vertibird that would crash if you left it and walked away. How do I fix this?</p>
@@ -1116,10 +1113,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-4-13">
-						<h3 class="ctrl">8.4.13 &#8220;W ill FO3Edit merge the Eyes, Hairs, Mouth pieces, etc?&#8221;</h3>
+					<details open class="level-3" id="s_8-4-13">
+						<summary><h3 class="ctrl">8.4.13 &#8220;W ill FO3Edit merge the Eyes, Hairs, Mouth pieces, etc?&#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> When merging patches that modify facial characteristics, will FO3Edit merge the Eyes, Hairs, Mouth pieces, etc?</p>
@@ -1135,10 +1132,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_8-4-14">
-						<h3 class="ctrl">8.4.14 &#8220;Can I merge destruction-data into my patch plug-in? &#8221;</h3>
+					<details open class="level-3" id="s_8-4-14">
+						<summary><h3 class="ctrl">8.4.14 &#8220;Can I merge destruction-data into my patch plug-in? &#8221;</h3></summary>
 
 						<div class="content">
 							<p><strong>Question:</strong> Is it possible to get the destruction data that I created for my mod into the merged patch or should I just do it by hand?</p>
@@ -1152,7 +1149,7 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
 				</div><!--/.content-->
 
@@ -1161,7 +1158,7 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
 		</div><!--/.content-->
 

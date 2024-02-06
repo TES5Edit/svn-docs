@@ -9,10 +9,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<script type="text/javascript" src="js/lib/jquery.js"></script>
-	<script type="text/javascript" src="js/lib/jcarousellite.js"></script>
 	<script type="text/javascript" src="js/t5e.js"></script>
-
 </head>
 
 <body>
@@ -80,13 +77,11 @@
 	<section id="_Toc237480231">
 		<h1>2. Overview</h1>
 
+		<button class="ctrl-all">Collapse All</button>
 
 		<div class="content clearfix">
-			<button class="ctrl-all" onclick="toggle_all(this);">Collapse All</button>
-			
-			<div class="level-2" id="s_2-1">
-				<h2 class="ctrl">2.1 Introducing FO3Edit</h2>
-
+			<details open class="level-2" id="s_2-1">
+				<summary><h2 class="ctrl">2.1 Introducing FO3Edit</h2></summary>
 				<div class="content">
 					<p><a href="http://www.fallout3nexus.com/downloads/file.php?id=637">FO3Edit</a> is an advanced graphical module viewer/editor and conflict detector, with many additional functions that make it akin to a Swiss-army knife for modders and mod-authors alike. The primary function of FO3Edit is to help you spot conflicts between mods and resolve them, as well as to prepare your mod-list for a smooth run-time with <a href="3-master-update-and-master-restore.html">Master Update Mode (MUM)</a>.</p>
 
@@ -99,60 +94,23 @@
 					<p>If I have not convinced you by now to invest an evening to learn how to use FO3Edit, then you should be sacked and have a live Nuka-grenade stuffed down your trousers. If however you wish to do the right thing by the modding community, grab a coffee and let&#8217;s get to work! FO3Edit is not a difficult tool to use, but it does require that your CPU (brain) be involved in the process, and that is what this tutorial is designed to teach.</p>
 
 				</div><!--/.content-->
-
 			</div><!--/.level-2-->
 
-			<div class="level-2" id="s_2-2">
-				<h2 class="ctrl">2.2 Acquisition and Installation</h2>
+			<details open class="level-2" id="s_2-2">
+				<summary><h2 class="ctrl">2.2 Acquisition and Installation</h2></summary>
 
 
 				<div class="content">
-					<button class="ctrl-all" onclick="toggle_all(this);">Collapse All</button>
+					<button class="ctrl-all">Collapse All</button>
 
-					<div class="level-3" id="s_2-2-1">
-						<h3 class="ctrl">2.2.1 Downloading FO3Edit from Fallout3 Nexus</h3>
+					<details open class="level-3" id="s_2-2-1">
+						<summary><h3 class="ctrl">2.2.1 Downloading FO3Edit from Fallout3 Nexus</h3></summary>
 
 						<div class="content">
 							<p>FO3Edit works on Windows XP, Vista and Windows 7, other platforms or Windows simulators may or may not work and are not officially supported. FO3Edit is available for download from Fallout3 Nexus, one of the most outstanding sources for Fallout3 and Oblivion content. Click Here to <a href="http://www.fallout3nexus.com/downloads/file.php?id=637">FastLink</a> or use the following URL in your browser: <u style="display:inline-block">http://www.fallout3nexus.com/downloads/file.php?id=637</u></p>
 
 							<div class="p-img">
-								<div class="carousel">
-									<ul>
-										<li class="img">
-											<figure>
-												<img  height="490" src="img/image002.jpg" width="576">
-												<figcaption>Image caption 1</figcaption>
-
-											</figure>
-
-										</li>
-
-										<li class="img">
-											<figure>
-												<img  height="490" src="img/image002.jpg" width="576">
-												<figcaption>Image caption 2</figcaption>
-
-											</figure>
-
-										</li>
-
-										<li class="img">
-											<figure>
-												<img  height="490" src="img/image002.jpg" width="576">
-												<figcaption>Image caption 3</figcaption>
-
-											</figure>
-
-										</li>
-
-									</ul>
-
-									<div class="controls">
-										<span class="carousel-prev btn">&laquo;</span>&nbsp;<span class="carousel-next btn">&raquo;</span>
-
-									</div>
-
-								</div><!--/carousel-->
+								<p class="img"><img  height="490" src="img/image002.jpg" width="576"></p>
 
 								<p>The following page will display from the Fallout3 Nexus site. You will need to first click on, &#8220;Files&#8221; to display the list of FO3Edit versions. Once loaded, check the Version number in the upper-right corner (B) to ensure you download the most current revision. Then click on that revision of FO3Edit in the Mail Files section (C).</p>
 
@@ -181,10 +139,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_2-2-2">
-						<h3 class="ctrl">2.2.2 DirectX and Requirements</h3>
+					<details open class="level-3" id="s_2-2-2">
+						<summary><h3 class="ctrl">2.2.2 DirectX and Requirements</h3></summary>
 
 						<div class="content">
 							<p>With FO3Edit installed let&#8217;s review some system parameters and drivers that you will need in order to successfully operate the tool. FO3Edit requires current DirectX drivers from Microsoft. You can tell if your system is up-to-spec by simply launching the tool. If FO3Edit loads and presents you with a Master/Plug-in Selector view, your good to go but you can skip this next step. If you get an error about d3dx9_*.dll not being installed, you need to update your DirectX to at <em>least</em> the March 2008 Version.</p>
@@ -200,10 +158,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_2-2-3">
-						<h3 class="ctrl">2.2.3 Windows Vista and UAC Security</h3>
+					<details open class="level-3" id="s_2-2-3">
+						<summary><h3 class="ctrl">2.2.3 Windows Vista and UAC Security</h3></summary>
 
 						<div class="content">
 							<p>The UAC Security feature of Vista protects the Program Files directory from un-authorized access. Unfortunately this also causes problems for FO3Edit and Fallout3, and requires some manual intervention on your part to resolve. You have 3 options for dealing with UAC Security: </p>
@@ -226,10 +184,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_2-2-4">
-						<h3 class="ctrl">2.2.4 Starting FO3Edit</h3>
+					<details open class="level-3" id="s_2-2-4">
+						<summary><h3 class="ctrl">2.2.4 Starting FO3Edit</h3></summary>
 
 						<div class="content">
 							<p>When started it will automatically find your Fallout 3 Data directory via the system registry (not by where it was installed). If you immediately get errors indicating that FO3Edit can&#8217;t find the Fallout3 files, it means you moved the files to another directory after installing FO3Edit. You need to re-install the Fallout 3 Game again and place it into whatever directory you want as part of the install process.</p>
@@ -252,7 +210,7 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
 				</div><!--/.content-->
 
@@ -261,19 +219,19 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_2-3">
-				<h2 class="ctrl">2.3 Tour of User Interface</h2>
+			<details open class="level-2" id="s_2-3">
+				<summary><h2 class="ctrl">2.3 Tour of User Interface</h2></summary>
 
 
 				<div class="content">
 					<p>This section of the manual will take you on a brief tour of <a href="http://www.fallout3nexus.com/downloads/file.php?id=637">FO3Edit</a> to introduce you to the different views and screens that you will be working with. This tour is designed for beginner-level users, and does not discuss the functionality of the views at any depth just yet. The tour is recommended for all levels of user, especially if you have not used FO3Edit within the last several months as there have been many updates.</p>
 
-					<button class="ctrl-all" onclick="toggle_all(this);">Collapse All</button>
-					
-					<div class="level-3" id="s_2-3-1">
-						<h3 class="ctrl">2.3.1 Master/Plug-in Selection View</h3>
+					<button class="ctrl-all">Collapse All</button>
+
+					<details open class="level-3" id="s_2-3-1">
+						<summary><h3 class="ctrl">2.3.1 Master/Plug-in Selection View</h3></summary>
 
 						<div class="content">
 							<div class="p-img">
@@ -294,10 +252,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_2-3-2">
-						<h3 class="ctrl">2.3.2 Left-Side Panel</h3>
+					<details open class="level-3" id="s_2-3-2">
+						<summary><h3 class="ctrl">2.3.2 Left-Side Panel</h3></summary>
 
 						<div class="content">
 							<div class="p-img">
@@ -315,10 +273,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_2-3-3">
-						<h3 class="ctrl">2.3.3 Main Context Menu</h3>
+					<details open class="level-3" id="s_2-3-3">
+						<summary><h3 class="ctrl">2.3.3 Main Context Menu</h3></summary>
 
 						<div class="content">
 							<div class="p-img">
@@ -383,10 +341,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_2-3-4">
-						<h3 class="ctrl">2.3.4 Right-Side Information Tab</h3>
+					<details open class="level-3" id="s_2-3-4">
+						<summary><h3 class="ctrl">2.3.4 Right-Side Information Tab</h3></summary>
 
 						<div class="content">
 
@@ -406,10 +364,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_2-3-5">
-						<h3 class="ctrl">2.3.5 Right-Side Messages Tab</h3>
+					<details open class="level-3" id="s_2-3-5">
+						<summary><h3 class="ctrl">2.3.5 Right-Side Messages Tab</h3></summary>
 
 						<div class="content">
 							<div class="p-img">
@@ -428,10 +386,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_2-3-6">
-						<h3 class="ctrl">2.3.6 Right-Side References Tab</h3>
+					<details open class="level-3" id="s_2-3-6">
+						<summary><h3 class="ctrl">2.3.6 Right-Side References Tab</h3></summary>
 
 						<div class="content">
 
@@ -453,10 +411,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_2-3-7">
-						<h3 class="ctrl">2.3.7 Right-Side View Tab</h3>
+					<details open class="level-3" id="s_2-3-7">
+						<summary><h3 class="ctrl">2.3.7 Right-Side View Tab</h3></summary>
 
 						<div class="content">
 							<div class="p-img">
@@ -475,10 +433,10 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
-					<div class="level-3" id="s_2-3-8">
-						<h3 class="ctrl">2.3.8 Filter Menu</h3>
+					<details open class="level-3" id="s_2-3-8">
+						<summary><h3 class="ctrl">2.3.8 Filter Menu</h3></summary>
 
 						<div class="content">
 							<div class="p-img">
@@ -501,7 +459,7 @@
 
 						</div><!--/.level-nav-->
 
-					</div><!--/.level-3-->
+					</details><!--/.level-3-->
 
 				</div><!--/.content-->
 
@@ -510,10 +468,10 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_2-4">
-				<h2 class="ctrl">2.4 Saving and Confirmation</h2>
+			<details open class="level-2" id="s_2-4">
+				<summary><h2 class="ctrl">2.4 Saving and Confirmation</h2></summary>
 
 				<div class="content">
 					<div class="p-img">
@@ -531,10 +489,10 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_2-5">
-				<h2 class="ctrl">2.5 Quick Tips and Shortcuts</h2>
+			<details open class="level-2" id="s_2-5">
+				<summary><h2 class="ctrl">2.5 Quick Tips and Shortcuts</h2></summary>
 
 				<div class="content">
 					<p>There are several important keyboard short-cuts that can make your usage of <a href="http://www.fallout3nexus.com/downloads/file.php?id=637">FO3Edit</a> more efficient with less key-strokes for some common functions.</p>
@@ -555,9 +513,9 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-		</div><!--/.content-->
+	</details><!--/.content-->
 
 		<div class="section-nav">
 			<a href="index.html" class="prev">&laquo; Previous Page</a><a href="3-master-update-and-master-restore.html" class="next">Next Page &raquo;</a>

@@ -9,10 +9,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<script type="text/javascript" src="js/lib/jquery.js"></script>
-	<script type="text/javascript" src="js/lib/jcarousellite.js"></script>
 	<script type="text/javascript" src="js/t5e.js"></script>
-
 </head>
 
 <body>
@@ -53,12 +50,12 @@
 	<section id="_Toc237480249">
 		<h1>3. Master Update and Master Restore</h1>
 
-		<button class="ctrl-all" onclick="toggle_all(this);">Collapse All</button>
+		<button class="ctrl-all">Collapse All</button>
 
 		<div class="content clearfix">
 
-			<div class="level-2" id="s_3-1">
-				<h2 class="ctrl">3.1 Overview</h2>
+			<details open class="level-2" id="s_3-1">
+				<summary><h2 class="ctrl">3.1 Overview</h2></summary>
 
 				<div class="content">
 					<p>Master Update Mode is the solution to the bugs introduced in Patch 1.5 in regards to Plug-ins, as well as the white-face bug and a number of older issues with mod conflicts. Master Update (<abbr title="Master Update Mode">MUM</abbr>) is highly recommended for all modders, as it can prevent crashes, incompatibilities and may provide you with a smoother gaming experience.</p>
@@ -69,10 +66,10 @@
 
 				</div><!--/.content-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_3-2">
-				<h2 class="ctrl">3.2 Master Update Mode</h2>
+			<details open class="level-2" id="s_3-2">
+				<summary><h2 class="ctrl">3.2 Master Update Mode</h2></summary>
 
 				<div class="content">
 					<p>Master Update Mode is activated by creating another copy of the program, and renaming it to, &#8220;FO3MasterUpdate.exe&#8221;. When FO3Edit runs, it will recognize its filename and run in Master Update Mode accordingly.</p>
@@ -116,10 +113,10 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_3-3">
-				<h2 class="ctrl">3.3 Master Restore Mode</h2>
+			<details open class="level-2" id="s_3-3">
+				<summary><h2 class="ctrl">3.3 Master Restore Mode</h2></summary>
 
 				<div class="content">
 					<p>There is also a MasterRestore mode which reverses the <abbr title="Master Update Mode">MUM</abbr> process by removing the <abbr title="Elder Scrolls Master">ESM</abbr> flag again from all .esp files. Similar to Master Update Mode, you need to copy/paste the FO3Edit.exe. Program, and rename the new copy to, &#8220;FO3MasterRestore.exe&#8221;.</p>
@@ -140,10 +137,10 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
-			<div class="level-2" id="s_3-4">
-				<h2 class="ctrl">3.4 Using Master Update with Merged Patches (&#8220;Modding-Up&#8221;)</h2>
+			<details open class="level-2" id="s_3-4">
+				<summary><h2 class="ctrl">3.4 Using Master Update with Merged Patches (&#8220;Modding-Up&#8221;)</h2></summary>
 
 				<div class="content">
 
@@ -256,7 +253,7 @@
 
 				</div><!--/.level-nav-->
 
-			</div><!--/.level-2-->
+			</details><!--/.level-2-->
 
 		</div><!--/.content-->
 
@@ -265,7 +262,7 @@
 
 		</div><!--/.section-nav-->
 
-	</section>
+	</details>
 
 </body>
 </html>

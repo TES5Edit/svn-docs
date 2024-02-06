@@ -35,6 +35,8 @@ div.toc .local {
 	float:left;
 	margin-right: 1em;
 }
+details.level-2,
+details.level-3,
 div.level-2,
 div.level-3 {
 	position: relative;
@@ -43,8 +45,12 @@ div.level-3 {
 	padding:2em 3em;
 	margin-top:1em;
 }
+div.content > details.level-2:first-child,
+div.content > details.level-3:first-child,
 div.content > div.level-2:first-child,
 div.content > div.level-3:first-child,
+div.content > p + details.level-2,
+div.content > p + details.level-3
 div.content > p + div.level-2,
 div.content > p + div.level-3 {
 	margin-top: 0;
@@ -52,14 +58,17 @@ div.content > p + div.level-3 {
 .level-2 a {color:#FFCC99;}
 .level-3 a {color:#CC7700;}
 
+details.level-2,
 div.level-2 {
 	background-color: #666;
 	color: #eee;
 }
+details.level-3,
 div.level-3 {
 	background-color: #ddd;
 	color: #333;
 }
+details.level-2 h2,
 div.level-2 h2{
 	color: #eee;
 }
@@ -111,8 +120,8 @@ div.section-nav  a.next{
 div.level-nav a {
 	display: inline-block;
 	font-style: italic;
-	float: left;
-	clear: left;
+	/* float: left; */
+	/* clear: left; */
 	padding: .5em;
 }
 div.level-nav a.up:after {
@@ -127,15 +136,8 @@ div.level-nav a.top:after {
 	display: none;
 	visibility: hidden;
 }
-button.ctrl-all + div.content {
-}
-h2.ctrl, h3.ctrl {
-	position: relative;
-	text-indent: -8px;
-}
-h3.ctrl {
-	text-indent: -4px;
-}
+
+summary:hover:has(> h2.ctrl),
 h2.ctrl:hover {
 	background-color:#777;
 }
@@ -145,54 +147,6 @@ h3.ctrl:hover {
 .ctrl {
 	cursor: pointer;
 }
-.ctrl:before,
-.inactive.ctrl:after {
-	content: '';
-	float:left;
-	width: 0;
-	height: 0;
-	cursor:pointer;
-}
-.ctrl:before,
-.ctrl:after {
-	border-style: solid;
-}
-h2.ctrl:before {
-	margin-top: 10px;
-}
-h2.ctrl:after {
-	top: 18px;
-}
-h2.ctrl:before,
-h2.ctrl:after {
-	left: -14px;
-	border-width:  7px;
-}
-div.level-3 > .ctrl:before {
-	margin-top: 8px;
-}
-h3.ctrl:before,
-h3.ctrl:after {
-	left: -10px;
-	border-width:  5px;
-}
-h3.ctrl:after {
-	top: 14px;
-}
-.ctrl:before {
-	position: relative;
-	border-left-color: transparent;
-	border-right-color: transparent;
-}
-.inactive.ctrl:before {
-	border-bottom-color: red;
-	border-top: none;
-}
-.inactive.ctrl:after {
-	position: absolute;
-	border-color: red transparent;
-	border-bottom: none;
-}
 
 /* IMAGES
 ==============================================================================*/
@@ -201,45 +155,46 @@ div.p-img {
 	margin-bottom:1em;
 	margin-top:1em;
 }
-div.carousel,
 p.img {
 	margin-left:1em;
 }
 div.p-img p + p {
 	float:none;
 }
-div.p-img div.carousel,
 div.p-img p.img {
 	float:right;
 	clear:right;
 }
-div.p-img div.carousel {
-	border:1px solid #eee;
-	padding:1px;
+
+/* Collapsible sections */
+details summary {
+	display: list-item;
+	cursor: pointer;
+	margin-bottom: -10px; /* for more prominent move */
+	transition: margin 150ms ease-out;
 }
-div.carousel figcaption{
-	text-align: center;
+summary:has(> h1) {
+	margin-top: 1.34em;
 }
-div.carousel .controls{
-	width: 100%;
-	float:right;
-	text-align: center;
-	border-top:1px dotted #eee;
+summary:has(> h2) {
+	margin-top: 1.245em;
 }
-div.carousel .btn{
-	width:49%;
-	display:inline-block;
-	cursor:pointer;
-	font-size: 1.5em;
-	font-weight: bold;
+summary:has(> h3) {
+	margin-top: 1.17em;
 }
-div.carousel .btn:hover {
-	background-color: #e5e5e5;
-	color: #996600;
+details[open] summary:has(> h1) {
+	margin-bottom: 1.34em;
 }
-div.carousel .btn.prev {
-	float: left;
+details[open] summary:has(> h2) {
+	margin-bottom: 1.245em;
 }
-div.carousel .btn.next {
-	float: right;
+details[open] summary:has(> h3) {
+	margin-bottom: 1.17em;
+}
+
+summary > h1,
+summary > h2,
+summary > h3 {
+	display: inline-block;
+	margin: 0;
 }
